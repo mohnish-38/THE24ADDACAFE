@@ -1,10 +1,12 @@
 'use client'
 import HomePage from './Home/home';
 import HeaderFooter from '../Components/HeaderFooterWrapper/HeaderFooterWrapper';
-export default function MobileNavbar({ children }: { children: any }) {
+function MobileNavbar() {
   return (
     <HeaderFooter>
       <HomePage/>
     </HeaderFooter>
   );
 }
+
+export default MobileNavbar;

@@ -7,8 +7,12 @@ import classes from './HeaderSimple.module.css';
 import logoImg from '../../public/cafe.png'
 import Link from 'next/link';
 
+interface HeaderSimpleProps {
+  opened: boolean;
+  toggle: () => void;
+}
 
-export function HeaderSimple({ opened, toggle }) {
+export function HeaderSimple({ opened, toggle }: HeaderSimpleProps) {
 
   return (
     <header className={classes.header}>
